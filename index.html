@@ -90,78 +90,6 @@
             padding-bottom: 0.5rem;
         }
 
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .team-member {
-            text-align: center;
-            padding: 1.5rem;
-            background: #f9f9f9;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-
-        .team-member:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .team-member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border: 4px solid #667eea;
-        }
-
-        .team-member h3 {
-            color: #333;
-            margin-bottom: 0.5rem;
-        }
-
-        .placeholder-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            margin: 0 auto 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0.5rem 0.5rem 0.5rem 0;
-            transition: background 0.3s;
-            font-weight: 500;
-        }
-
-        .btn:hover {
-            background: #764ba2;
-        }
-
-        .btn-secondary {
-            background: #6c757d;
-        }
-
-        .btn-secondary:hover {
-            background: #5a6268;
-        }
-
         footer {
             background: #333;
             color: white;
@@ -176,29 +104,6 @@
         }
 
         footer a:hover {
-            text-decoration: underline;
-        }
-
-        .materials-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .materials-list li {
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            background: #f9f9f9;
-            border-left: 4px solid #667eea;
-            border-radius: 4px;
-        }
-
-        .materials-list a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .materials-list a:hover {
             text-decoration: underline;
         }
 
@@ -228,11 +133,6 @@
     <nav>
         <ul>
             <li><a href="#vision">Vision</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#code">Code</a></li>
-            <li><a href="#report">Report</a></li>
-            <li><a href="#presentations">Presentations</a></li>
-            <li><a href="#resources">Resources</a></li>
         </ul>
     </nav>
 
@@ -249,73 +149,12 @@
                 Through this work, we hope to contribute to the broader conversation about AI interpretability and show how transparent AI systems can enhance human decision-making rather than simply replace it.
             </p>
         </section>
-
-        <section id="team">
-            <h2>Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="placeholder-img">A</div>
-                    <h3>Team Member 1</h3>
-                    <p>Computer Science student specializing in artificial intelligence and machine learning. Focused on developing the core game-playing algorithms.</p>
-                </div>
-                <div class="team-member">
-                    <div class="placeholder-img">B</div>
-                    <h3>Team Member 2</h3>
-                    <p>Data Science student with expertise in visualization and user experience. Leading the explainability interface development.</p>
-                </div>
-                <div class="team-member">
-                    <div class="placeholder-img">C</div>
-                    <h3>Team Member 3</h3>
-                    <p>Computer Science student interested in game theory and strategic reasoning. Working on evaluation metrics and user studies.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="code">
-            <h2>Code</h2>
-            <p>Our project code is hosted on GitHub and is open source. The repository includes implementations of various board game engines, AI agents, and explanation generation modules.</p>
-            <a href="https://github.com/yourusername/explainable-board-games" class="btn">View Repository</a>
-            <a href="https://github.com/yourusername/explainable-board-games/blob/main/README.md" class="btn btn-secondary">Documentation</a>
-        </section>
-
-        <section id="report">
-            <h2>Report</h2>
-            <p>
-                <strong>For CS/DATA 396:</strong> This section contains our current project proposal with updates reflecting our progress and any changes to our original approach.
-            </p>
-            <p>
-                <strong>For CS/DATA 398:</strong> This section contains our complete final report detailing our methodology, results, and conclusions.
-            </p>
-            <a href="documents/project-proposal.pdf" class="btn">Download Project Proposal</a>
-            <a href="documents/final-report.pdf" class="btn">Download Final Report</a>
-        </section>
-
-        <section id="presentations">
-            <h2>Presentations</h2>
-            <p>View our presentation materials from status reports and final presentations.</p>
-            <ul class="materials-list">
-                <li><a href="presentations/status-report-1.pdf">Status Report 1 - October 2024</a></li>
-                <li><a href="presentations/status-report-2.pdf">Status Report 2 - November 2024</a></li>
-                <li><a href="presentations/final-presentation.pdf">Final Presentation - December 2024</a></li>
-            </ul>
-        </section>
-
-        <section id="resources">
-            <h2>Resources & References</h2>
-            <p>Research papers and materials that have informed our project:</p>
-            <ul class="materials-list">
-                <li><a href="#">Silver, D., et al. (2017). Mastering the game of Go without human knowledge. Nature.</a></li>
-                <li><a href="#">Ribeiro, M. T., et al. (2016). "Why Should I Trust You?": Explaining the Predictions of Any Classifier.</a></li>
-                <li><a href="#">Anderson, A., et al. (2019). Explicable AI for Board Games. AAAI Conference.</a></li>
-                <li><a href="#">Additional reference papers and resources...</a></li>
-            </ul>
-        </section>
     </div>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 Explainable Board Games Project</p>
-            <p><a href="https://www.mccormick.northwestern.edu/computer-science/">Northwestern University Department of Computer Science</a></p>
+            <p><a href="https://calvin.edu/academics/school-stem/computer-science">Calvin University Department of Computer Science</a></p>
         </div>
     </footer>
 </body>
